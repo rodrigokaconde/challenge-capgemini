@@ -29,4 +29,10 @@ public class CheckPasswordLengthTests {
         int passworSizeAdd = CheckPasswordLength.checkPassword("aaaaaaaaaaaaaa");
         assertEquals(0, passworSizeAdd);
     }
+
+    @Test
+    public void checkPasswordExample(){
+        int passworSizeAdd = CheckPasswordLength.checkPassword("Ya3");
+        assertEquals(3, passworSizeAdd);
+    }
 }

@@ -30,4 +30,10 @@ public class LadderTests {
         assertEquals("", ladder);
     }
 
+    @Test
+    public void TestBuildLadderExample(){
+        String ladder = Ladder.buildLadder(6);
+        assertEquals("     *\n    **\n   ***\n  ****\n *****\n******", ladder);
+    }
+
 }

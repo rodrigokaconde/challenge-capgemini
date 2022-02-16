@@ -8,7 +8,8 @@ public class Ladder {
                 ladder += " ";
             for (int j = 1; j <= i; j++)
                 ladder += "*";
-            ladder += "\n";
+            if(i!=n)
+                ladder += "\n";
         }
         return ladder;
     }
